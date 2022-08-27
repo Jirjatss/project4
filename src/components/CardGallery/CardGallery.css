@@ -1,0 +1,65 @@
+#Populer .container {
+  border: 10px dotted;
+  margin-top: 2rem;
+  font-family: "Sarabun", sans-serif;
+  padding-top: 3rem;
+}
+.bg-light {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+}
+.Populer-caption {
+  text-align: center;
+  background-color: #fff;
+}
+#Populer .Populer-item {
+  max-width: 26rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+#Populer .Populer-item .Populer-link {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+#Populer .Populer-item .Populer-link .Populer-hover {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity ease-in-out 0.25s;
+}
+#Populer .Populer-item .Populer-link .Populer-hover .Populer-hover-content {
+  font-size: 1.25rem;
+  color: white;
+}
+#Populer .Populer-item .Populer-link:hover .Populer-hover {
+  opacity: 1;
+}
+#Populer .Populer-item .Populer-caption {
+  padding: 1.5rem;
+  /* text-align: center; */
+  background-color: transparent;
+  width: 100%;
+}
+#Populer .Populer-item .Populer-caption .Populer-caption-heading {
+  /* font-size: 1rem; */
+  font-weight: 700;
+}
+#Populer .Populer-item .Populer-caption .Populer-caption-subheading {
+  font-style: italic;
+}
+#Populer .img-fluid {
+  width: 100% !important;
+  height: 20rem !important;
+}
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  #Populer .Populer-item img {
+    width: 100%;
+    height: 10rem;
+  }
+}
