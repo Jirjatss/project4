@@ -1,15 +1,16 @@
 import React from "react";
 import Header from "../../components/Header/Header";
 import Nav from "../../components/Nav/Nav";
-
+import { AppContext } from "../../context/AppContext";
 import "./Contact.css";
 import FormContact from "../../components/FormContact/FormContact";
 
 function Contact() {
+  const context = React.useContext(AppContext);
   return (
     <>
       <Nav />
-      <Header id={"Contact"} />
+      <Header id={context.lang === "en" ? "Contact" : "Kontak"} />
       <section class="page-section" id="Populer">
         <div class="container">
           <div class="row">

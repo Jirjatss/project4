@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 function Header({ id }) {
   return (
     <>
-      <h1 id={id}>{id}</h1>
+      <h1 id={"id"}>{id}</h1>
     </>
   );
 }

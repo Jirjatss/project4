@@ -4,12 +4,14 @@ import Nav from "../../components/Nav/Nav";
 import gambar from "../../assets/Sajad.jpg";
 import "../../components/Header/Header.css";
 import "./About.css";
+import { AppContext } from "../../context/AppContext";
 
 function About() {
+  const context = React.useContext(AppContext);
   return (
     <>
       <Nav />
-      <Header id={"About"} />
+      <Header id={context.lang === "en" ? "About" : "Tentang"} />
       <section>
         <div className="container About">
           <div className="row justify-content-between" style={{ textAlign: "justify" }}>

@@ -7,8 +7,6 @@ function FormContact() {
 
   const [listnama, setListNama] = useState([]);
 
-  // const [button, setButton] = useState("Submit");
-
   const inputHandle = (e) => {
     setName(e.target.value);
   };
