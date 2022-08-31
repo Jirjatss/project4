@@ -1,16 +1,16 @@
 import React from "react";
 import Header from "../../components/Header/Header";
-import Nav from "../../components/Nav/Nav";
+// import Nav from "../../components/Nav/Nav";
 import gambar from "../../assets/Sajad.jpg";
 import "../../components/Header/Header.css";
 import "./About.css";
-import { AppContext } from "../../context/AppContext";
+import { NavContext } from "../../context/NavContext";
 
 function About() {
-  const context = React.useContext(AppContext);
+  const context = React.useContext(NavContext);
   return (
     <>
-      <Nav />
+      {/* <Nav /> */}
       <Header id={context.lang === "en" ? "About" : "Tentang"} />
       <section>
         <div className="container About">

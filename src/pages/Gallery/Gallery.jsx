@@ -5,11 +5,11 @@ import Nav from "../../components/Nav/Nav";
 import gambar1 from "../../assets/1.jpg";
 import gambar2 from "../../assets/4.jpg";
 import gambar3 from "../../assets/5.JPEG";
-import { AppContext } from "../../context/AppContext";
+import { NavContext } from "../../context/NavContext";
 // import "./Gallery.css";
 
 function Gallery() {
-  const context = React.useContext(AppContext);
+  const context = React.useContext(NavContext);
   return (
     <>
       <Nav />

@@ -1,16 +1,16 @@
 import React from "react";
 import Header from "../../components/Header/Header";
-import Nav from "../../components/Nav/Nav";
+// import Nav from "../../components/Nav/Nav";
 import "../../components/Header/Header.css";
 import gambar from "../../assets/Sajad.jpg";
 import "./Home.css";
-import { AppContext } from "../../context/AppContext";
+import { NavContext } from "../../context/NavContext";
 
 function Home() {
-  const context = React.useContext(AppContext);
+  const context = React.useContext(NavContext);
   return (
     <>
-      <Nav />
+      {/* <Nav /> */}
       <Header id={context.lang === "en" ? "Home" : "Beranda"} />
       <section className="jumbotron text-center">
         <img src={gambar} alt="" className="rounded-circle img-thumbnail" style={{ width: "20rem" }} />
